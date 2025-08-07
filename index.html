@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Retrospective Review</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      margin: 0;
+      padding: 0;
+    }
+    .slide {
+      display: none;
+      padding: 60px;
+      min-height: 100vh;
+      box-sizing: border-box;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    .slide.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .header-slide {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .header-slide h1 {
+      font-size: 3.2em;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #34495e;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+    }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    tr:hover { background-color: #f1faff; }
+
+    .nav {
+      text-align: center;
+      padding: 20px;
+    }
+    .nav button {
+      padding: 12px 25px;
+      font-size: 16px;
+      margin: 0 10px;
+      background: linear-gradient(to right, #00b09b, #96c93d);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .nav button:hover {
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+      transform: translateY(-2px);
+    }
+    ul {
+      list-style-type: disc;
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .worklog-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .worklog-card {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .worklog-card:hover {
+      transform: translateY(-6px);
+    }
+    .worklog-card h3 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
+    }
+    .project-card {
+      background: #fff;
+      border-left: 6px solid #8e44ad;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+      background: #f0f3f5;
+    }
+    .achievement-box {
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .achievement-box:hover {
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slides -->
+  <div class="slide active header-slide">
+    <h1>Retrospective Review of the Last Week</h1>
+    <p>Progress Snapshot | Week Ending August 7, 2025</p>
+  </div>
+
+  <div class="slide">
+    <h2>Deployments Done in the Last Week</h2>
+    <table>
+      <tr><th>ID</th><th>Deployment Date</th><th>Resource</th><th>Description</th></tr>
+      <tr><td>RDP -8389</td><td>07-08-2025</td><td>Anushka</td><td>Insurance GCL QW changes</td></tr>
+      <tr><td>RDP -8388</td><td>07-08-2025</td><td>Anushka</td><td>Insurance GCL SF changes</td></tr>
+      <tr><td>RDP -8389</td><td>04-08-2025</td><td>Mohit</td><td>Entity Name update on SF (Lead & Contact) and loan documents</td></tr>
+    </table>
+  </div>
+
+  <div class="slide">
+    <h2>Current Work Log</h2>
+    <div class="worklog-container">
+      <div class="worklog-card">
+        <h3>Anushka</h3>
+        <ul>
+          <li>SCF and Redirection journey testing support</li>
+          <li>IP-4856 - Legal Entity Identifier (LEI) - BL Program</li>
+        </ul>
+      </div>
+      <div class="worklog-card">
+        <h3>Chander</h3>
+        <ul><li>IP-4668 - System Tagging changes for BL program</li></ul>
+      </div>
+      <div class="worklog-card">
+        <h3>Raghavendra</h3>
+        <ul><li>DSA Portal Integration</li></ul>
+      </div>
+      <div class="worklog-card">
+        <h3>Shubham</h3>
+        <ul><li>DSA Portal Integration</li></ul>
+      </div>
+      <div class="worklog-card">
+        <h3>Mohit</h3>
+        <ul>
+          <li>CI-5030 - Dedupe Issue in ABND base</li>
+          <li>IP-4880 - Airtel: KFS regeneration and resign via Legality</li>
+        </ul>
+      </div>
+      <div class="worklog-card">
+        <h3>Nitish</h3>
+        <ul>
+          <li>MI-359 - Asquarian - Enabling Multi Constitution NCL-24</li>
+          <li>nPOS CoLending: DMI API Specs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <h2>Issues Resolved</h2>
+    <table>
+      <tr><th>Issue</th><th>Partner</th><th>Owner</th><th>Effort</th><th>Status</th><th>Date</th></tr>
+      <tr><td>KFS Not generated</td><td>MSME_UBTL</td><td>Nitish</td><td>1 hrs</td><td>Resolved</td><td>,1st Aug 2025</td></tr>
+      
+    </table>
+  </div>
+
+  <div class="slide">
+    <h2>Project Tracker</h2>
+    <div class="project-card"> SCF Portal - UAT Testing</div>
+    <div class="project-card"> Redirection Journey - UAT Testing</div>
+    <div class="project-card"> Getvantage Stage - Dev</div>
+    <div class="project-card"> DSA Portal MSME - Dev</div>
+    <div class="project-card"> nPOS CoLending - Dev</div>
+  </div>
+
+  <div class="slide">
+    <h2>Achievements</h2>
+    <div class="achievement-box">
+      <strong>Insurance deployed successfully within the tight deadline</strong><br>
+      <em>Spotlight:</em> Anushka worked over weekends and late nights to complete the deployment and remained available while traveling.
+    </div>
+    <div class="achievement-box">
+      <strong>A case was successfully completed under the generic solution of MSME_UBTL</strong><br>
+      <em>Thanks to Nitish for a flexible solution.</em>
+    </div>
+  </div>
+
+  <div class="nav">
+    <button onclick="changeSlide(-1)">← Previous</button>
+    <button onclick="changeSlide(1)">Next →</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+    function changeSlide(step) {
+      current += step;
+      if (current < 0) current = 0;
+      if (current >= slides.length) current = slides.length - 1;
+      showSlide(current);
+    }
+    showSlide(current);
+  </script>
+</body>
+</html>
