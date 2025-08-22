@@ -151,11 +151,17 @@
     <h2>Deployments Done in the Last Week</h2>
     <table>
       <tr><th>ID</th><th>Deployment Date</th><th>Resource</th><th>Description</th></tr>
-      <tr><td>RDP -8395</td><td>07-08-2025</td><td>Mohit</td><td>Null Pointer Exception in IntegrationMSME</td></tr>
-      <tr><td>RDP -8389</td><td>07-08-2025</td><td>Anushka</td><td>Insurance GCL QW changes</td></tr>
-      <tr><td>RDP -8388</td><td>07-08-2025</td><td>Anushka</td><td>Insurance GCL SF changes</td></tr>
-      <tr><td>RDP -8389</td><td>04-08-2025</td><td>Mohit</td><td>Entity Name update on SF (Lead & Contact) and loan documents</td></tr>
-       <tr><td>RDP -8310</td><td>04-08-2025</td><td>Anushka</td><td>Udyam Aadhar details at opportunity level</td></tr>
+      <tr><td>RDP -8492</td><td>21-08-2025</td><td>Shubham</td><td>Enablement of Updation of First Coupon Date at app installed-DMID2C BL</td></tr>
+      <tr><td>RDP -8490</td><td>21-08-2025</td><td>Shubham</td><td>MSME Banking Issue Fix</td></tr>
+      <tr><td>RDP -8462</td><td>21-08-2025</td><td>Mohit</td><td>PhonePe KYB Changes</td></tr>
+      <tr><td>RDP -8445</td><td>19-08-2025</td><td>Mohit</td><td>BL - Address issue fix by making fields non mandatory</td></tr>
+       <tr><td>RDP -8444</td><td>19-08-2025</td><td>Shubham</td><td>DMID2C - Business KYC name is to be used in KFS</td></tr>
+ <tr><td>RDP -8443</td><td>21-08-2025</td><td>Mohit</td><td>Dedupe B5 rule update</td></tr>
+      <tr><td>RDP -8437</td><td>19-08-2025</td><td>Mohit</td><td>Business KYC Changes - BL / MSME - QW</td></tr>
+<tr><td>RDP -8436</td><td>19-08-2025</td><td>Mohit</td><td>Business KYC Changes - BL / MSME - SF</td></tr>
+       <tr><td>RDP -8369</td><td>19-08-2025</td><td>Shubham</td><td>MSME Banking Journey Changes - Finbox New API Enhancement of Setu Stack - QW Changes</td></tr>
+       <tr><td>RDP -8368</td><td>19-08-2025</td><td>Shubham</td><td>MSME Banking Journey Changes - Finbox New API Enhancement of Setu Stack - SF Changes</td></tr>
+
     </table>
   </div>
 
@@ -166,17 +172,21 @@
         <h3>Anushka</h3>
         <ul>
           <li>SCF and Redirection journey testing support</li>
-          <li>IP-4856 - Legal Entity Identifier (LEI) - BL Program</li>
-          <li>IP-4878 - Faircent Changes for bank detail gst and offer</li>
+<li>IP-4780 Insurance GCL on API Integrated Partners - Saarathi and Faircent</li>
+          <li>IP-4856 - Legal Entity Identifier (LEI) - BL Program - Dev</li>
+          <li>IP-4878 - Faircent Changes for bank detail gst and offer - UAT</li>
+      <li>MI-365 Other Document Upload Functionality - UAT</li>
         </ul>
       </div>
       <div class="worklog-card">
         <h3>Chander</h3>
-        <ul><li>IP-4668 - System Tagging changes for BL program</li></ul>
+        <ul><li>IP-4668 - System Tagging changes for BL program - UAT</li></ul>
+            <ul><li>Getvantage changes - Dev</li></ul>
       </div>
       <div class="worklog-card">
         <h3>Raghavendra</h3>
         <ul><li>DSA Portal Integration</li></ul>
+
       </div>
       <div class="worklog-card">
         <h3>Shubham</h3>
@@ -187,26 +197,34 @@
       <div class="worklog-card">
         <h3>Mohit</h3>
         <ul>
-          <li>CI-5030 - Dedupe Issue in ABND base - UAT Testing</li>
+    
           <li>IP-4783 - GPay M Enhancement for CPV Betterment - Dev</li>
+   <li>IP-4880 - Airtel: KFS regeneration and resign via Legality for Address or other details mismatch - Dev</li>
+ <li>IP-4839 - GPay M - Topup & Repeat - BL - Contact creation in business name - Dev</li>
         </ul>
       </div>
       <div class="worklog-card">
         <h3>Nitish</h3>
         <ul>
-          <li>MI-359 - Asquarian - Enabling Multi Constitution </li>
+          <li>OPI-638 GPM- PL's Dynamic PF API should not run on bulk closure of tasks </li>
           <li>NCL-24 nPOS CoLending: DMI API Specs</li>
+
         </ul>
       </div>
     </div>
   </div>
 
   <div class="slide">
-    <h2>Issues Resolved</h2>
+    <h2>Issues Resolved and Production Support</h2>
     <table>
       <tr><th>Issue</th><th>Partner</th><th>Owner</th><th>Effort</th><th>Status</th><th>Date</th></tr>
-      <tr><td>KFS Not generated</td><td>MSME_UBTL</td><td>Nitish</td><td>1 hrs</td><td>Resolved</td><td>,1st Aug 2025</td></tr>
-      <tr><td>KYC Not Stamped due to null pointer exception</td><td>MSME App</td><td>Mohit</td><td>4 hrs</td><td>Resolved</td><td>,8th Aug 2025</td></tr>
+      <tr><td>Blank Mandate Link not generated for saarthi</td><td>Saarthi</td><td>Anushka</td><td>0.5 hrs</td><td>Resolved</td><td>20 Aug 2025</td></tr>
+      <tr><td>KFS not generated for Asquarian</td><td>Asquarian</td><td>Anushka</td><td>3 hrs</td><td>Resolved</td><td>21 Aug 2025</td></tr>
+      <tr><td>KYC Rejected </td><td>Asquarian</td><td>Nitish</td><td>0.5 hrs</td><td>Resolved</td><td>19 Aug 2025</td></tr>
+      <tr><td>Dedupe Bypass</td><td>Asquarian</td><td>Chander</td><td>0.5 hrs</td><td>Resolved</td><td>19 Aug 2025</td></tr>
+      <tr><td>KFS Regeneration</td><td>Airtel</td><td>Mohit</td><td>2 hrs</td><td>Resolved</td><td>Recurring</td></tr>
+      <tr><td>KFS Regeneration</td><td>MSME App</td><td>Shubham</td><td>2 hrs</td><td>Resolved</td><td>Recurring</td></tr>
+
     </table>
   </div>
 
